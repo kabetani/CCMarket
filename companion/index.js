@@ -9,8 +9,18 @@ settingsStorage.onchange = function(evt) {
   getCurrencyMarket();
 }
 
-// Check update interval
-let interval = settingsStorage.getItem(FAVORITE_CURRENCY_SETTING);
+// Get update interval
+var interval = "0";
+let intervalSetting = settingsStorage.getItem(UPDATE_INTERVAL);
+if (intervalSetting) {
+  try {
+    intervalSetting = JSON.parse(intervalSetting);
+    interval = intervalSetting["values"]["0"]["value"];
+  }
+  catch (e) {
+    console.log("error parsing setting value: " + e);
+  }
+}
 if (interval != null && interval !=  "0") {
   setInterval(function() {
     getCurrencyMarket();

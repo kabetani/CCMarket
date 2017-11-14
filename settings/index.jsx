@@ -14,8 +14,7 @@ function mySettings(props) {
       <Section
         title={<Text bold align="center">Crypto Currency Market</Text>}>
         <Select
-          label={"Update interval"}
-          title="Update interval"
+          label={"UPDATE INTERVAL"}
           settingsKey="update_interval_setting"
           options={[
             {name:"None", value:"0"},

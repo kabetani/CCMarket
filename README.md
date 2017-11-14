@@ -6,7 +6,8 @@ This is a sample application for the Fitbit Ionic.
 
 Installation
 ------------
-This is a application for Fitbit Ionic ( https://www.fitbit.com/ionic )
+This is a application for Fitbit Ionic ( https://www.fitbit.com/ionic ).
+
 Please follow the instruction of above site.
 
 License

@@ -4,6 +4,8 @@ CCMarket
 Show crypto currency market price on the Bittrex.
 This is a sample application for the Fitbit Ionic.
 
+![Screnshot](CCMarket-screenshot.png "Screenshot")
+
 Installation
 ------------
 This is a application for Fitbit Ionic ( https://www.fitbit.com/ionic ).

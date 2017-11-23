@@ -10,6 +10,9 @@
     "i18n": {
       "en": {
         "name": "CCMarket"
+      },
+      "ja": {
+        "name": "CCMarket"
       }
     }
   }

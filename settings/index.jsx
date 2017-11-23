@@ -24,6 +24,18 @@ function mySettings(props) {
             {name:"10 min", value:"600000"},
           ]}
         />
+        <Select
+          label={"BASE FIAT MONEY"}
+          settingsKey="base_fiat_setting"
+          options={[
+            {name:"US Dollar", value:"USD", mark:"$"},
+            {name:"Euro", value:"EUR", mark:"€"},
+            {name:"British Pound", value:"GBP", mark:"£"},
+            {name:"Chinese Yuan", value:"CNY", mark:"\xA5"},
+            {name:"Japanese Yen", value:"JPY", mark:"\xA5"},
+            {name:"South Korean Won", value:"KRW", mark:""},
+          ]}
+        />
         <AdditiveList
           title="Add your favorite currencies"
           settingsKey="favorite_currency_setting"

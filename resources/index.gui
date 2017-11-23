@@ -4,7 +4,8 @@
     <rect id="c-back" x="0" y="0" width="100%" height="100%" fill="black" />
     <text id="c-name" x="5" y="55" font-size="40" fill="white">Name</text>
     <text id="c-price" x="5" y="100" font-size="55" fill="white">Price</text>
-    <text id="c-diff" x="100%-130" y="51" font-size="30" fill="black"></text>
+    <text id="c-diff" x="100%-140" y="51" font-size="30" fill="black"></text>
+    <text id="c-fiat" x="100%-140" y="98" font-size="36" fill="black"></text>
     <rect id="tile-divider-bottom" height="2" />
   </symbol>
   

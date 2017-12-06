@@ -1,7 +1,7 @@
 export const FAVORITE_CURRENCY_SETTING = "favorite_currency_setting";
 export const BASE_FIAT = "base_fiat_setting";
 export const UPDATE_INTERVAL = "update_interval_setting";
-export const CURRENCY_COUNT = 5;
+export const CURRENCY_COUNT = 10;
 
 export const CURRENCIES = {
   "btc-1st":"BTC-1ST",

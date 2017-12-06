@@ -25,12 +25,18 @@ CCMarketUI.prototype.updateUI = function(state, data) {
     
     this.currencyList.style.display = "inline";
     this.statusText.text = "";
+    
+    // Get Market data.
     if (data.data.type == 'market') {
       this.updateCurrencyList(data);
     }
+    // Get BTC Rate.
     else {
-      this.fiatRate = Number(data.data.rate.replace(/,/g, ''));
-      this.fiatMark = data.data.mark;
+      var rate = Number(data.data.rate.replace(/,/g, ''));
+      if (!isNaN(rate)) {
+        this.fiatRate = rate;
+        this.fiatMark = data.data.mark;
+      }
     }
   }
   else {

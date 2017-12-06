@@ -30,6 +30,21 @@
     <use id="currency-4" href="#tile-list-item" class="item">
       <use href="#tile-currency" />
     </use>
+    <use id="currency-5" href="#tile-list-item" class="item">
+      <use href="#tile-currency" />
+    </use>
+    <use id="currency-6" href="#tile-list-item" class="item">
+      <use href="#tile-currency" />
+    </use>
+    <use id="currency-7" href="#tile-list-item" class="item">
+      <use href="#tile-currency" />
+    </use>
+    <use id="currency-8" href="#tile-list-item" class="item">
+      <use href="#tile-currency" />
+    </use>
+    <use id="currency-9" href="#tile-list-item" class="item">
+      <use href="#tile-currency" />
+    </use>
   </use>
   
 </svg>

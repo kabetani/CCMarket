@@ -39,7 +39,7 @@ function mySettings(props) {
         <AdditiveList
           title="Add your favorite currencies"
           settingsKey="favorite_currency_setting"
-          maxItems="5"
+          maxItems="10"
           addAction={
             <TextInput
               title="Add currency"

@@ -11,8 +11,12 @@ for (let key in CURRENCIES) {
 function mySettings(props) {
   return (
     <Page>
-      <Section
-        title={<Text bold align="center">Crypto Currency Market</Text>}>
+      <Section title={<Text bold align="center">Crypto Currency Market</Text>}>
+        <Button
+          list
+          label="Clear all settings"
+          onClick={() => props.settingsStorage.clear()}
+        />
         <Select
           label={"UPDATE INTERVAL"}
           settingsKey="update_interval_setting"
@@ -36,8 +40,9 @@ function mySettings(props) {
             {name:"South Korean Won", value:"KRW", mark:""},
           ]}
         />
+      </Section>
+      <Section title={<Text bold align="center">Add your favorite currencies</Text>}>
         <AdditiveList
-          title="Add your favorite currencies"
           settingsKey="favorite_currency_setting"
           maxItems="10"
           addAction={

@@ -52,3 +52,31 @@ CCMarketAPI.prototype.currencyMarket = function(currency, no) {
     });
   });
 }
+
+/**
+ Get market data from Binance.
+*/
+CCMarketAPI.prototype.binanceMarket = function(currency, no) {
+  var self = this;
+  return new Promise(function(resolve, reject) {
+    var url = "https://api.binance.com/api/v1/ticker/24hr?";
+    url += "symbol=" + currency.key;
+    fetch(url).then(function(response) {
+      return response.json();
+    }).then(function(json) {
+      var diff = ((json["lastPrice"] - json["prevClosePrice"]) / json["prevClosePrice"]) * 100;
+      var data = {
+        "type" : "market",
+        "no" : no, 
+        "key" : currency.key + '_N',
+        "MarketName": currency.name, 
+        "Last" : json["lastPrice"],
+        "Diff" : diff.toFixed(3),
+      };
+      resolve(data);
+    }).catch(function (error) {
+      console.log("Fetching " + url + " failed: " + JSON.stringify(error));
+      reject(error);
+    });
+  });
+}

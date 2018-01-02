@@ -59,13 +59,26 @@ function getCurrencyMarket() {
   }
   var ccmarketApi = new CCMarketAPI();
   currencies.forEach((currency, index) => {
-    ccmarketApi.currencyMarket(currency, index).then(function(data) {
-      if (messaging.peerSocket.readyState === messaging.peerSocket.OPEN) {
-        messaging.peerSocket.send(data);
-      }
-    }).catch(function (e) {
-      console.log(e);
-    });
+    // Binance currency.
+    if (currency.key.slice(-2) == '_N') {
+      currency.key = currency.key.substr(0, currency.key.length - 2);
+      ccmarketApi.binanceMarket(currency, index).then(function(data) {
+        if (messaging.peerSocket.readyState === messaging.peerSocket.OPEN) {
+          messaging.peerSocket.send(data);
+        }
+      }).catch(function (e) {
+        console.log(e);
+      });
+    }
+    else {
+      ccmarketApi.currencyMarket(currency, index).then(function(data) {
+        if (messaging.peerSocket.readyState === messaging.peerSocket.OPEN) {
+          messaging.peerSocket.send(data);
+        }
+      }).catch(function (e) {
+        console.log(e);
+      });
+    }
   });
 }
 

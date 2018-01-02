@@ -204,6 +204,7 @@ export const CURRENCIES = {
   "btc-zec":"BTC-ZEC",
   "btc-zen":"BTC-ZEN",
   "usdt-bcc":"USDT-BCC",
+  "usdt-btc":"USDT-BTC",
   "usdt-dash":"USDT-DASH",
   "usdt-etc":"USDT-ETC",
   "usdt-eth":"USDT-ETH",

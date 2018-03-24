@@ -1,0 +1,50 @@
+<svg>
+  <!-- Define a reusable tile to display a train -->
+  <symbol id="tile-currency" focusable="false" pointer-events="visible" system-events="all">
+    <rect id="c-back" x="0" y="0" width="100%" height="100%" fill="black" />
+    <text id="c-name" x="5" y="40" font-size="34" fill="white">Name</text>
+    <text id="c-price" x="5" y="87" font-size="50" fill="white">Price</text>
+    <text id="c-diff" x="100%-120" y="38" font-size="28" fill="black"></text>
+    <text id="c-fiat" x="100%-120" y="83" font-size="34" fill="black"></text>
+    <rect id="tile-divider-bottom" height="2" />
+  </symbol>
+  
+  <textarea id="status" class="status">status message to be displayed here</textarea>
+  
+  <use id="currencyList" href="#tile-list" height="100%" width="100%">
+    <var id="reorder-enabled" value="0"/>
+    <var id="separator-height-bottom" value="2"/>
+
+    <use id="currency-0" href="#tile-list-item" class="item">
+      <use href="#tile-currency" />
+    </use>
+    <use id="currency-1" href="#tile-list-item" class="item">
+      <use href="#tile-currency" />
+    </use>
+    <use id="currency-2" href="#tile-list-item" class="item">
+      <use href="#tile-currency" />
+    </use>
+    <use id="currency-3" href="#tile-list-item" class="item">
+      <use href="#tile-currency" />
+    </use>
+    <use id="currency-4" href="#tile-list-item" class="item">
+      <use href="#tile-currency" />
+    </use>
+    <use id="currency-5" href="#tile-list-item" class="item">
+      <use href="#tile-currency" />
+    </use>
+    <use id="currency-6" href="#tile-list-item" class="item">
+      <use href="#tile-currency" />
+    </use>
+    <use id="currency-7" href="#tile-list-item" class="item">
+      <use href="#tile-currency" />
+    </use>
+    <use id="currency-8" href="#tile-list-item" class="item">
+      <use href="#tile-currency" />
+    </use>
+    <use id="currency-9" href="#tile-list-item" class="item">
+      <use href="#tile-currency" />
+    </use>
+  </use>
+  
+</svg>
